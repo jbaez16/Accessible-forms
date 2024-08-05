@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+
+<head>
+	<meta charset="utf-8">
+	<!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+	<title>Form Activity Solution File</title>
+	<link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+<!------ TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE ---------->
+			<form action="https://apatersonasu.github.io/Form/" method="post">
+				<label for="name">Full Name<span class="required">&#10057;</span> </label>
+				<input id="name" name="name" type="text" placeholder="First & Last Name" autocomplete="name" required>
+				<label for="email">Email Address<span class="required">&#10057;</span> </label>
+				<input id="email" name="email" type="email" placeholder="user@mydomain.com" autocomplete="email" required>
+				<label for="tel">Phone Number<span class="required">&#10057;</span></label>
+				<input id="tel" name="tel" type="tel" placeholder="XXX-XXX-XXXX" autocomplete="tel" required>
+				<fieldset>
+					<legend>Preferred Contact Method<span class="required">&#10057;</span> </legend>
+					<input name="contact" type="radio" id="contact1"><label for="contact1">Email</label>
+					<input name="contact" type="radio" id="contact2"><label for="contact1">Phone</label>
+				</fieldset>
+				<div>
+					<label for="state">State of Residence<span class="required">&#10057;</span></label>
+					<input id="state" name="state" type="text" list="stateid" placeholder="TX" required>
+					<datalist id="stateid">
+						<select>
+							<option value="AL">AL</option>
+							<option value="AK">AK</option>
+							<option value="AZ">AZ</option>
+							<option value="AR">AR</option>
+							<option value="AL">AL</option>
+							<option value="CA">CA</option>
+							<option value="CO">CO</option>
+							<option value="CT">CT</option>
+							<option value="DE">DE</option>
+							<option value="FL">FL</option>
+							<option value="GA">GA</option>
+							<option value="HI">HI</option>
+							<option value="ID">ID</option>
+							<option value="IL">IL</option>
+							<option value="IN">IN</option>
+							<option value="IA">IA</option>
+							<option value="KS">KS</option>
+							<option value="KY">KY</option>
+							<option value="LA">LA</option>
+							<option value="ME">ME</option>
+							<option value="MD">MD</option>
+							<option value="MA">MA</option>
+							<option value="MI">MI</option>
+							<option value="MN">MN</option>
+							<option value="MS">MS</option>
+							<option value="MO">MO</option>
+							<option value="MT">MT</option>
+							<option value="NE">NE</option>
+							<option value="NV">NV</option>
+							<option value="NH">NH</option>
+							<option value="NJ">NJ</option>
+							<option value="NM">NM</option>
+							<option value="NY">NY</option>
+							<option value="NC">NC</option>
+							<option value="ND">ND</option>
+							<option value="OH">OH</option>
+							<option value="OK">OK</option>
+							<option value="OR">OR</option>
+							<option value="PA">PA</option>
+							<option value="RI">RI</option>
+							<option value="SC">SC</option>
+							<option value="SD">SD</option>
+							<option value="TN">TN</option>
+							<option value="TX">TX</option>
+							<option value="UT">UT</option>
+							<option value="VT">VT</option>
+							<option value="VA">VA</option>
+							<option value="WA">WA</option>
+							<option value="WV">WV</option>
+							<option value="WI">WI</option>
+							<option value="WY">WY</option>
+						</select>
+					</datalist>
+				</div>
+				<label for="comments">Comments</label>
+				<textarea id="comments" name="comments" placeholder="Please enter comments here"></textarea>
+				<input type="submit" name="submit" value="Submit">
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
